@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import data.ExcelData_Creator;
+
 public class SignUpObject {
 	WebDriver driver;
 	
@@ -12,6 +14,8 @@ public class SignUpObject {
 			PageFactory.initElements(driver, this);
 			this.driver = driver;
 		}
+		
+		ExcelData_Creator edc = new ExcelData_Creator("");
 		
 		@FindBy(xpath= "//a[@href='/register?returnUrl=%2F']")
 		WebElement register;
@@ -44,22 +48,22 @@ public class SignUpObject {
 						@FindBy(xpath= "//select[@name='DateOfBirthDay']")
 						WebElement day;
 						
-							public void days() {
-								day.click();
+							public void days(String d) {
+								day.sendKeys(d);
 							}
 							
 							@FindBy(xpath= "//select[@name='DateOfBirthMonth']")
 							WebElement month;
 							
-								public void months() {
-									month.click();
+								public void months(String m) {
+									month.sendKeys(m);
 								}
 								
 								@FindBy(xpath="//select[@name='DateOfBirthYear']")
 								WebElement year;
 								
-									public void years() {
-										year.click();
+									public void years(String y) {
+										year.sendKeys(y);
 									}
 									
 									@FindBy(xpath="//input[@type='email' and @id='Email']")
