@@ -16,7 +16,7 @@ public class SignUpObject {
 		@FindBy(xpath= "//a[@href='/register?returnUrl=%2F']")
 		WebElement register;
 		
-			public void register() {
+			public void registerC() {
 				register.click();
 			}
 			
