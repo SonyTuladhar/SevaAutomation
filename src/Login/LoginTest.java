@@ -32,8 +32,8 @@ public class LoginTest {
 		login.emailInput(Emails);
 		login.passwordInput(Password);
 		login.logInClick();
+		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
-
 		jse.executeScript("scroll(0, 500);");
 		Thread.sleep(1000);
 	}
