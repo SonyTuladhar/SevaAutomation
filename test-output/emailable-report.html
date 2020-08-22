@@ -9,34 +9,47 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num attn">4</td><td class="num">0</td><td class="num">28,925</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num attn">2</td><td class="num">0</td><td class="num">75,172</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">SignUp.SignUpTest</td><td><a href="#m0">testSignUp</a></td><td rowspan="1">1598078834008</td><td rowspan="1">7068</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="7">SignUp.SignUpTest</td><td><a href="#m1">browserQuit</a></td><td rowspan="4">1598078841133</td><td rowspan="4">0</td></tr><tr class="skippedeven"><td><a href="#m2">browserQuit</a></td></tr><tr class="skippedeven"><td><a href="#m3">browserQuit</a></td></tr><tr class="skippedeven"><td><a href="#m4">browserQuit</a></td></tr><tr class="skippedeven"><td><a href="#m5">testSignUp</a></td><td rowspan="3">1598078841124</td><td rowspan="3">0</td></tr><tr class="skippedeven"><td><a href="#m6">testSignUp</a></td></tr><tr class="skippedeven"><td><a href="#m7">testSignUp</a></td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">SignUp.SignUpTest</td><td><a href="#m8">registerData</a></td><td rowspan="4">1598078841119</td><td rowspan="4">0</td></tr><tr class="skippedeven"><td><a href="#m9">registerData</a></td></tr><tr class="skippedeven"><td><a href="#m10">registerData</a></td></tr><tr class="skippedeven"><td><a href="#m11">registerData</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">SignUp.SignUpTest</td><td><a href="#m12">registerData</a></td><td rowspan="1">1598078829622</td><td rowspan="1">4208</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Login.LoginTest</td><td><a href="#m0">testLogin</a></td><td rowspan="1">1598081269554</td><td rowspan="1">15613</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">Login.LoginTest</td><td><a href="#m1">driverClose</a></td><td rowspan="2">1598081285189</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m2">driverClose</a></td></tr><tr class="skippedeven"><td><a href="#m3">testLogin</a></td><td rowspan="1">1598081285191</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">Login.LoginTest</td><td><a href="#m4">loginData</a></td><td rowspan="2">1598081285179</td><td rowspan="2">1</td></tr><tr class="skippedeven"><td><a href="#m5">loginData</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Login.LoginTest</td><td><a href="#m6">loginData</a></td><td rowspan="3">1598081227502</td><td rowspan="3">3960</td></tr><tr class="passedeven"><td><a href="#m7">loginData</a></td></tr><tr class="passedeven"><td><a href="#m8">loginData</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">SignUp.SignUpTest#testSignUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+<h2>Default test</h2><h3 id="m0">Login.LoginTest#testLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created exception
+from chrome not reachable
   (Session info: chrome=84.0.4147.135)
   (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+Command duration or timeout: 15.08 seconds
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
 System info: host: &apos;DESKTOP-PTFMALK&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\SONYTU~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.135, webStorageEnabled: true}
-Session ID: 509cc12aefb93cfe1e408c7aceb3a69d
+Driver info: driver.version: ChromeDriver
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-	at SignUp.SignUpTest.testSignUp(SignUpTest.java:18)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Login.LoginTest.testLogin(LoginTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -66,37 +79,46 @@ Session ID: 509cc12aefb93cfe1e408c7aceb3a69d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">SignUp.SignUpTest#browserQuit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">SignUp.SignUpTest#browserQuit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">SignUp.SignUpTest#browserQuit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">SignUp.SignUpTest#browserQuit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">SignUp.SignUpTest#testSignUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">SignUp.SignUpTest#testSignUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">SignUp.SignUpTest#testSignUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">SignUp.SignUpTest#registerData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+<h3 id="m1">Login.LoginTest#driverClose</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Login.LoginTest#driverClose</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Login.LoginTest#testLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Login.LoginTest#loginData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created exception
+from chrome not reachable
   (Session info: chrome=84.0.4147.135)
   (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+Command duration or timeout: 15.08 seconds
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
 System info: host: &apos;DESKTOP-PTFMALK&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\SONYTU~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.135, webStorageEnabled: true}
-Session ID: 509cc12aefb93cfe1e408c7aceb3a69d
+Driver info: driver.version: ChromeDriver
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-	at SignUp.SignUpTest.testSignUp(SignUpTest.java:18)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Login.LoginTest.testLogin(LoginTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,30 +148,43 @@ Session ID: 509cc12aefb93cfe1e408c7aceb3a69d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">SignUp.SignUpTest#registerData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+<h3 id="m5">Login.LoginTest#loginData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created exception
+from chrome not reachable
   (Session info: chrome=84.0.4147.135)
   (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+Command duration or timeout: 15.08 seconds
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
 System info: host: &apos;DESKTOP-PTFMALK&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\SONYTU~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.135, webStorageEnabled: true}
-Session ID: 509cc12aefb93cfe1e408c7aceb3a69d
+Driver info: driver.version: ChromeDriver
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-	at SignUp.SignUpTest.testSignUp(SignUpTest.java:18)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Login.LoginTest.testLogin(LoginTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -179,112 +214,8 @@ Session ID: 509cc12aefb93cfe1e408c7aceb3a69d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">SignUp.SignUpTest#registerData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=84.0.4147.135)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
-System info: host: &apos;DESKTOP-PTFMALK&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\SONYTU~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.135, webStorageEnabled: true}
-Session ID: 509cc12aefb93cfe1e408c7aceb3a69d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-	at SignUp.SignUpTest.testSignUp(SignUpTest.java:18)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">SignUp.SignUpTest#registerData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=84.0.4147.135)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
-System info: host: &apos;DESKTOP-PTFMALK&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\SONYTU~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.135, webStorageEnabled: true}
-Session ID: 509cc12aefb93cfe1e408c7aceb3a69d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-	at SignUp.SignUpTest.testSignUp(SignUpTest.java:18)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">SignUp.SignUpTest#registerData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr><tr class="param stripe"><td>Sony</td><td>Tuladhar</td><td>4</td><td>January</td><td>1994</td><td>sonytuladhar24@gmail.com</td><td>Khalti</td><td>76697669</td><td>76697669</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Login.LoginTest#loginData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sonytuladhar24@gmail.com</td><td>76697669</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Login.LoginTest#loginData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sonytuladhar26@gmail.com</td><td>76697669</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Login.LoginTest#loginData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sonytuladhar25@gmail.com</td><td>76697669</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

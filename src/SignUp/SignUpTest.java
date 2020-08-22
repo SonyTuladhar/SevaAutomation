@@ -9,47 +9,46 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class SignUpTest {
-	WebDriver driver;
-	
+	private WebDriver driver;
+
 	@BeforeMethod
-		public void testSignUp() throws InterruptedException {
-			System.setProperty("webdriver.chrome.driver", "webDriver/chromedriver2.40.exe");
-			driver = new ChromeDriver();
-			driver.get("https://demo.nopcommerce.com/");
-			driver.manage().window().maximize();
-			
-				SignUpObject sign = new SignUpObject(driver);
-				sign.registerC();
-				driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);
-				Thread.sleep(1000);
+	public void testSignUp() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "webDriver/chromedriver2.40.exe");
+		driver = new ChromeDriver();
+		driver.get("https://demo.nopcommerce.com/");
+		driver.manage().window().maximize();
+
+		SignUpObject sign = new SignUpObject(driver);
+		sign.registerClick();
+		driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);
 	}		
-				@Test(dataProvider="SignUpDatas",dataProviderClass=SignUpData.class, priority=1)
-				public void registerData(String FirstName,String LastName,String  Days,String Month, String Year, String Email, String CompanyName, String Password, String ConfirmPassword) throws InterruptedException {
-					SignUpObject signi = new SignUpObject(driver);
-					signi.registerC();
-					driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);
-					Thread.sleep(1000);
-					signi.mgender();
-					
-					
-					signi.fnameInput(FirstName);
-					signi.lnameInput(LastName);
-					signi.days(Days);
-					driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);
-					signi.months(Month);
-					signi.years(Year);
-					signi.emailClick(Email);
-					signi.companyInput(CompanyName);
-					signi.passInput(Password);
-					signi.confirm(ConfirmPassword);
-					signi.registerClick();
-					
-				}
-				
-					@AfterMethod
-					public void browserQuit() {
-						driver.close();
-					}
-				
-		}
+	
+	@Test(dataProvider="SignUpDatas",dataProviderClass=SignUpData.class, priority=1)
+	public void registerData(String FirstName,String LastName,String  Days,String Month, String Year, String Email, String CompanyName, String Password, String ConfirmPassword) throws InterruptedException {
+		SignUpObject signUpObj = new SignUpObject(driver);
+		signUpObj.registerClick();
+		driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);
+		Thread.sleep(1000);
+		signUpObj.mgender();
+
+		signUpObj.firstNameInput(FirstName);
+		signUpObj.lastNameInput(LastName);
+		signUpObj.dayInput(Days);
+		driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);
+		signUpObj.monthInput(Month);
+		signUpObj.years(Year);
+		signUpObj.emailClick(Email);
+		signUpObj.companyInput(CompanyName);
+		signUpObj.passwordInput(Password);
+		signUpObj.cPasswordInput(ConfirmPassword);
+		signUpObj.registerButtonClick();
+
+	}
+
+	@AfterMethod
+	public void browserQuit() {
+		driver.close();
+	}
+
+}
 
