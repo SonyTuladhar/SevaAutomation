@@ -24,9 +24,9 @@ public class LoginTest {
 		}
 	
 	@Test(dataProvider="LoginDatas",dataProviderClass=LoginData.class,priority=1)
-		public void loginData(String Email,String Password) {
+		public void loginData(String Emails,String Password) {
 			LoginObject login = new LoginObject(driver);
-			login.emailInput(Email);
+			login.emailInput(Emails);
 			login.passInput(Password);
 			login.logClick();
 	}

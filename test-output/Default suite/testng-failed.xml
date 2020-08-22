@@ -5,6 +5,8 @@
     <classes>
       <class name="SignUp.SignUpTest">
         <methods>
+          <include name="browserQuit"/>
+          <include name="registerData"/>
           <include name="testSignUp"/>
         </methods>
       </class> <!-- SignUp.SignUpTest -->
